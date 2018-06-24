@@ -17,7 +17,7 @@ public class EvoJTest {
         GenePool<Property> pool = pf.createPool(20, Property.class, null);
         DefaultHandler handler = new DefaultHandler(new Rating(),
                 null, null, null);
-        handler.iterate(pool, 200);
+        handler.iterate(pool, 200); //ругается на итерацию
         Property prop = pool.getBestSolution();
 
 
